@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap');
+
+.conteudoStory {
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    height: 91vh;
+    margin-top: 61px;
+    position: relative;
+}
+
+.conteudoStory .proximoStory {
+    height: 100vh;
+    right: 0;
+    position: absolute;
+    width: 20%;
+}
+
+.conteudoStory .storyAnterior {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    width: 20%;
+}
+
+.topo {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgb(0 0 0 / 40%) 83%);
+}
+
+.topo, .base {
+    padding: 0.5em;
+    padding-bottom: 1em;
+}
+
+.topo .contador {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    margin-bottom: 10px;
+}
+
+.topo .contador .linha {
+    background: rgba(255, 255, 255, .35);
+    height: 2px;
+    margin-right: 3px;
+}
+
+.topo .contador .linha:last-child {
+    margin-right: 0px;
+}
+
+.topo .contador .linha.ativo {
+    background: #fff;
+}
+
+.topo .conteudo {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.topo .conteudo .fechar {
+    position: absolute;
+    right: 0;
+    z-index: 99999;
+}
+
+.topo .conteudo img {
+    border-radius: 50%;
+    width: 30px;
+}
+
+.topo .conteudo span {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+.base {
+    align-content: end;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgb(0 0 0 / 40%) 0%, rgba(255,255,255,0) 83%);
+    display: grid;
+}
+
+.base .conteudo {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr;
+}
+
+.base .conteudo input {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}
+
+.base .conteudo .gosto, .base .conteudo .direct {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+
+.base .conteudo .gosto {
+    justify-content: end;
+    z-index: 9999999
+}

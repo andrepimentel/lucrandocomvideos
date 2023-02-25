@@ -1,0 +1,30 @@
+.top {
+    background: #171717;
+    border-bottom: 1px solid #171717;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.top .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 60px;
+
+    max-width: 957px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.top .container .logo {
+    width: 110px;
+    cursor: pointer;
+}
+
+.saldo span{
+    font-weight: bold;
+    color: #fff;
+}
